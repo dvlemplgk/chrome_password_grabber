@@ -183,7 +183,7 @@ class Chrome:
 
             #print(line)
 
-            if (line.find("CREATE TABLE logins") >= 0):
+            if (line.find('CREATE TABLE "logins"') >= 0):
                 # determine the index of the password
                 password_param_index = 0
                 mangle_line = line
